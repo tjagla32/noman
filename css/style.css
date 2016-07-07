@@ -1,0 +1,414 @@
+html, body{
+  overflow-x: hidden;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+p{
+  text-transform: none;
+}
+/*---navbar-section---*/
+.navbar-default {
+  font-size: 14px;
+  /*background: rgba(243, 243, 243, 1);*/
+  background: #f6f6f6;
+  border-width: 0px;
+  border-radius: 0px;
+  box-shadow: 0 0 0 #000;
+  font-family: "Dosis";
+  font-size: 16px;
+  padding: 5px 0;
+}
+.navbar-default .navbar-nav>li>a {
+  color: rgba(119, 119, 119, 1);
+  background: #f6f6f6;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: rgba(247, 77, 101, 1);
+  background: #f6f6f6;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: rgba(247, 77, 101, 1);
+  background: #f6f6f6;
+}
+.navbar-default .navbar-toggle {
+  border-color: #aaa;
+  margin-top: 10px;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(247, 77, 101, 1);
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: rgba(247, 77, 101, 1);
+}
+.navbar-default .navbar-brand > img{
+  height: 25px;
+}
+/*--------home--------*/
+.home{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+}
+.home::after{
+  content: "";
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+.home .row:first-child{
+  margin: 100px 0 265px;
+}
+.home .row:first-child img{
+  margin-top: 15px;
+}
+.home .row:last-child{
+  margin-bottom: 70px;
+}
+.home .row:last-child span{
+  display: block;
+  margin-top: 10px;
+}
+.home .row:last-child img{
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+.home h2{
+  font-family: "Dosis";
+  font-size: 54px;
+  letter-spacing: 13px;
+}
+.home .row:first-child span{
+  display: block;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+/*-----services-----*/
+.services{
+  color: #404040;
+  font-size: 14px;
+}
+.services .row{
+  padding: 65px 0 60px;
+}
+.services .row i{
+  color: #fe3c58;
+}
+.services .row h3{
+  font-family: "Dosis";
+  color: #333;
+}
+/*------about------*/
+.about{
+  margin-bottom: 100px;
+}
+.about .row:nth-child(1){
+  padding: 35px 0 70px;
+}
+.about .row:nth-child(1) h2{
+  font-family: "Dosis";
+  color: #333;
+}
+.about .row:nth-child(2){
+  font-size: 15px;
+}
+.about .row:nth-child(2) h2{
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "Dosis";
+}
+.about .row:nth-child(3){
+  background-color: #fe3c58;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 70px;
+  transform: rotate(45deg) scale(1.5, 1.5);
+}
+.about .row:nth-child(3) .fa-stack{
+  transform: rotate(-45deg);
+  font-weight: 300; 
+}
+.owl-carousel{
+  text-align: center;
+  font-family: 'Dosis';
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.owl-carousel h4{
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #444;
+  letter-spacing: 0.7px;
+}
+.owl-dots{
+  margin-top: 15px;
+}
+
+/*-----testimonial-----*/
+.testimonial{
+  background-image: url(../img/header_bg.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.testimonial .overlay{
+  background: rgba(71, 71, 71, 0.8);
+}
+.testimonial .row{
+  display: flex;
+  align-items: stretch;
+}
+.testimonial .row > div:first-child{
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+.testimonial-icons{
+  color: #fff;
+  width: 100%;
+}
+.testimonial-icons > div h3{
+  font-size: 42px;
+  font-weight: bold;
+  margin: 15px 0 1px;
+}
+.testimonial-icons > div p{
+  text-transform: uppercase;
+  font-family: 'Dosis';
+  font-size: 16px;
+}
+.testimonial-icons > div span{
+  border-bottom: 1px solid #fe3c58;
+  padding-bottom: 5px;
+}
+.testimonial .row > div:last-child{
+  position: relative;
+}
+.imac img{
+  max-width: 95%;
+  max-height: 100%;
+  transform: translate(150px,-50px)
+}
+/*-----work-----*/
+.work{
+  margin: 100px 0;
+}
+.work .container:first-child .row h2{
+  font-family: 'Dosis';
+  letter-spacing: 2px;
+}
+.work .container:first-child .row p{
+  margin: 25px 0 100px;
+  font-size: 16px;
+}
+.pictures{
+  margin: 0;
+  margin-left: -1px;
+}
+.pictures > div{
+  position: relative;
+  padding: 1px;
+}
+.pictures > div img{
+  width: 100%
+}
+.pictures > div .image-overlay{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  background-color: rgba(254,60,88, 0.9);
+  font-family: 'Dosis';
+  color: #fff;
+  transition: all 1s ease 0.05s; /*last is delay*/
+  opacity: 0;
+}
+.image-overlay a{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.image-overlay h2{
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  letter-spacing: 3px;
+}
+.image-overlay h4{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 16px;
+}
+.is-showing{
+  opacity: 0.85;
+}
+.work > .container:last-child{
+  margin-top: 70px;
+}
+.work > .container:last-child .row{
+  margin-bottom: 80px;
+}
+.work > .container:last-child h4{
+  font-family: 'Dosis';
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.work > .container:last-child p{
+  font-size: 16px;
+}
+.work > .container:last-child button{
+  font-family: 'Dosis';
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  border-radius: 0;
+  padding: 10px 50px;
+  transition: all 1s ease 0.05s;
+}
+.work > .container:last-child button:hover{
+  background: #fe3c58;
+}
+/*-----contact-----*/
+.contact .row:first-child h2{
+  font-family: 'Dosis';
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.contact .row:first-child p{
+  margin: 30px 0 100px;
+  font-size: 16px;
+}
+.contact .row:nth-child(2) h2{
+  font-family: 'Dosis';
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.contact .row:nth-child(2) p{
+  font-size: 16px;
+}
+.contact form{
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+.form-control{
+  border: 0px solid #000;
+  border-radius: 0;
+  box-shadow: inset 0px 1px 3px -3px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+  height: 50px;
+  font-family: 'Dosis';
+  font-size: 16px;
+}
+.contact button{
+  width: 100%;
+  font-family: 'Dosis';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fe3c58;
+  border-radius: 0;
+  padding: 10px 50px;
+  transition: all 1s ease 0.05s;
+  border: 0 solid #000;
+  height: 47px;
+}
+.contact button:hover{
+  background-color: #e6e6e6;
+  color: #000;
+}
+.desc{
+  margin: 100px 0;
+  color: #636363;
+  text-transform: uppercase;
+  font-family: 'Dosis';
+  font-weight: normal;
+  font-size: 17px;
+}
+/*-----footer-----*/
+footer{
+  background-color: #f1f1f1;
+  padding-bottom: 50px;
+}
+footer .row:first-child{
+  margin: 60px 0 90px;
+}
+footer .row:nth-child(2) h2{
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+.social-media ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 0 70px;
+}
+.social-media a{
+  color: #636363;
+  text-decoration: none;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #636363;
+  transition: all 1s ease;
+}
+.social-media a i{
+  font-size: 16px;
+}
+.social-media a:hover{
+  color: #fe3c58;
+  border-color: #fe3c58;
+}
+.social-media ul li:first-child a{
+  margin-left: 0;
+}
+footer .row:last-child{
+  color: #606060;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+footer .row:last-child span{
+  color: #fe3c58;
+  letter-spacing: -0.5px;
+  font-family: 'Dosis';
+  font-weight: bolder;
+}
